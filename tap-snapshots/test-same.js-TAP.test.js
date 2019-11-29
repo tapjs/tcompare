@@ -200,6 +200,21 @@ exports[`test/same.js TAP diffs of errors with \\n in the message > must match s
 
 `
 
+exports[`test/same.js TAP diffs of errors with \\n in the message > must match snapshot 2`] = `
+--- expected
++++ actual
+@@ -1,7 +1,7 @@
+ Object {
+   "er": Error: foo
+ bar {
+-    "foo": "two",
++    "foo": "bar",
+     "name": "Error",
+     "message": "foo\\nbar",
+   },
+
+`
+
 exports[`test/same.js TAP empty arrays match > must match snapshot 1`] = `
 --- expected
 +++ actual
