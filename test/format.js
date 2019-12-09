@@ -220,3 +220,8 @@ t.test('hidden props and getters', t => {
   }).print(), 'all enumerable properties shown')
   t.end()
 })
+
+t.test('format BigInt', t => {
+  t.equal(new Format(BigInt('5')).print(), '5n')
+  t.end()
+})
