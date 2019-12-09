@@ -178,3 +178,8 @@ t.test('streams are not arrays', t => {
   t.matchSnapshot(new Format(writable).print())
   t.end()
 })
+
+t.test('format BigInt', { skip: !global.BigInt ? 'no BigInt here' : false }, t => {
+  t.equal(new Format(BigInt('5')).print(), '5n')
+  t.end()
+})
