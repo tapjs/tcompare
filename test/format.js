@@ -70,6 +70,7 @@ t.test('gnarly object, many points of view', t => {
       try {
         require('assert').equal(k, o)
       } catch (er) {
+        er.message = 'this is an assertion error, i promise'
         return er
       }
     })(),
