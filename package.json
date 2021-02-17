@@ -14,10 +14,10 @@
     "lib/*.js"
   ],
   "dependencies": {
-    "diff": "^4.0.2"
+    "diff": "^5.0.0"
   },
   "devDependencies": {
-    "tap": "^14.10.7"
+    "tap": "^14.11.0"
   },
   "scripts": {
     "test": "tap",
