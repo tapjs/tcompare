@@ -4,6 +4,7 @@ const Strict = require('./lib/strict.js')
 const Has = require('./lib/has.js')
 const HasStrict = require('./lib/has-strict.js')
 const Match = require('./lib/match.js')
+const MatchStrict = require('./lib/match-strict')
 
 const simple = o => ({
   diff: o.print(),
@@ -20,10 +21,12 @@ module.exports = {
   has: fn(Has),
   hasStrict: fn(HasStrict),
   match: fn(Match),
+  matchStrict: fn(MatchStrict),
   Format,
   Same,
   Strict,
   Has,
   HasStrict,
   Match,
+  MatchStrict
 }
